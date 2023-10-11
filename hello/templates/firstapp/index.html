@@ -1,0 +1,18 @@
+{% extends "firstapp/base.html" %}
+
+{% block title %} Главная страница {% endblock title %}
+{% block header %} Это главная страница сайта - index.html {% endblock header%}
+{% block content %}
+<div class="container-fluid my-2 text-start">
+    <div class="row">
+        <div class="col text-center text-dark">
+            <div>{{ my_text }}</div>
+            {% if col_people > 0 %}
+            <h5>
+                количество введённых пользователей - {{ col_people }}
+            </h5>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock content %}
